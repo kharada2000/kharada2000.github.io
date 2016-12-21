@@ -60,7 +60,8 @@ function getOffdays(_date){
 }
 
 if(document.getElementById('N56')==null){
-	alert('This Page is NOT Time Entry!');
+	alert('This Page is NOT Time Entry!!');
+	return
 }
 var myDate=new Date(document.getElementById('N56').value.split('|')[0]);
 //var myDate=new Date();
