@@ -23,7 +23,6 @@ function selectDate(id){
 		e.style.background='blue';
 		e.style.color='white';
 	}
-	//w.document.getElementById('result').value = pto.join();
 }
 
 function setValue(x,y,v1,v2,v3){
@@ -59,11 +58,7 @@ function getOffdays(_date){
 	return days;
 }
 
-if(document.getElementById('N56')==null){
-	alert('This Page is NOT Time Entry!!');
-}
 var myDate=new Date(document.getElementById('N56').value.split('|')[0]);
-//var myDate=new Date();
 var myWeekTbl="SMTWTFS";
 var myMonthTbl=[31,28,31,30,31,30,31,31,30,31,30,31];
 var s,w,i,j,ptorow,pto=[],bg='#ffffff',bd='#eeeeee';
@@ -97,9 +92,8 @@ L: for(i=1;i<10;i++){
 		}
 	}
 }
-console.log('PTOrow='+i);
+//console.log('PTOrow='+i);
 ptorow=i;
-
 
 /**** open new pop-up window ****/
 w = window.open('', 'Calender', 'width=300,height=300');
@@ -109,7 +103,7 @@ s+='</head><body><h4>'+myYear+'/'+(myMonth+1)+' Calender</h4>';
 //s+='<input type=text id=result>';
 s+='<input type=button onclick="window.opener.pushDate()" value="apply PTO">';
 s+='<table border=0><tr>';
-for(j=0;j<7;j++) {s+='<th>'+myWeekTbl[j]+'</th>';}
+for(j=0;j<7;j++) {s+='<th>'+myWeekTbl[j]+'</th>'}
 s+='</tr>';
 for(i=0; i<myTblLine; i++){
 	s+='<tr>';
