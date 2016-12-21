@@ -59,6 +59,10 @@ function getOffdays(_date){
 	return days;
 }
 
+if(document.getElementById('N56')==null){
+	alert('This Page is NOT Time Entry!');
+	break;
+}
 var myDate=new Date(document.getElementById('N56').value.split('|')[0]);
 //var myDate=new Date();
 var myWeekTbl="SMTWTFS";
