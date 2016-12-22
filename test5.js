@@ -6,7 +6,7 @@ function pushDate(){
 		}
 		setValue(pto[i]-1,ptorow,null,null,'7.5');
 	}
-	alert('test');
+	alert('testw');
 	w.close();
 }
 
