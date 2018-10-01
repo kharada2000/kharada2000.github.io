@@ -78,7 +78,7 @@ for(i=0; i<myMonthTbl[myMonth]; i++) myTable[i+myWeek]=i+1;
 L: for(i=1;i<10;i++){
 	var options = document.getElementById('A23'+i+'N1');
 	if(options==null){
-		alert("CAUTION!!\nCould not set PTO row!");
+		alert("CAUTION!!\nCould not find PTO row!");
 		break;
 	}
 	var type = options.selectedOptions[0].text;
@@ -92,7 +92,7 @@ L: for(i=1;i<10;i++){
 		}
 	}
 }
-//console.log('PTOrow='+i);
+console.log('PTOrow='+i);
 ptorow=i;
 
 /**** open new pop-up window ****/
