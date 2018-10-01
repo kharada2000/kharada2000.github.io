@@ -76,7 +76,7 @@ for(i=0; i<myMonthTbl[myMonth]; i++) myTable[i+myWeek]=i+1;
 
 /**** set PTO rows ****/
 L: for(i=1;i<10;i++){
-	var options = document.getElementById('A21'+i+'N1');
+	var options = document.getElementById('A23'+i+'N1');
 	if(options==null){
 		alert("CAUTION!!\nCould not set PTO row!");
 		break;
