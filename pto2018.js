@@ -27,9 +27,9 @@ function selectDate(id){
 
 function setValue(x,y,v1,v2,v3){
 	var d=document;
-	d.getElementById('B24_'+y+'_'+x).value=v1;
-	d.getElementById('B26_'+y+'_'+x).value=v2;
-	d.getElementById('B28_'+y+'_'+x).value=v3
+	d.getElementById('B30_'+y+'_'+x).value=v1;
+	d.getElementById('B31_'+y+'_'+x).value=v2;
+	d.getElementById('B32_'+y+'_'+x).value=v3
 }
 
 /* including 2018 holiday info*/
