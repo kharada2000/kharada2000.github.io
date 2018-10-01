@@ -92,7 +92,7 @@ L: for(i=1;i<10;i++){
 		}
 	}
 }
-console.log('PTOrow='+i);
+// console.log('PTOrow='+i);
 ptorow=i;
 
 /**** open new pop-up window ****/
