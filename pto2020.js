@@ -32,7 +32,7 @@ function setValue(x,y,v1,v2,v3){
 	d.getElementById('B32_'+y+'_'+x).value=v3
 }
 
-/* including 2018 holiday info*/
+/* including 2020 holiday info*/
 function getOffdays(_date){
 	var days=[];
 	var month=_date.getMonth();
@@ -43,6 +43,7 @@ function getOffdays(_date){
 		case 3:return [20];
 		case 4:return [29];
 		case 5:return [3,4,5,6];
+		case 6:return [];
 		case 7:return [23,24];
 		case 8:return [10];
 		case 9:return [21,22];
